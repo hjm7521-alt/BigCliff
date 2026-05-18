@@ -19,8 +19,8 @@ GARMIN_EMAIL=
 GARMIN_PASSWORD=
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4.1-mini
-OBSIDIAN_VAULT_PATH=C:/Users/you/Documents/ObsidianVault
-OBSIDIAN_REPORT_DIR=Garmin/Weekly Reports
+OBSIDIAN_VAULT_PATH=E:/옵시디언/움직이는 황정민
+OBSIDIAN_REPORT_DIR=건강 상태
 TIMEZONE=Asia/Seoul
 REPORT_LANGUAGE=ko
 MOCK_MODE=false
@@ -50,6 +50,13 @@ python src/main.py --force
 ## Obsidian 저장 경로 설정 방법
 - `OBSIDIAN_VAULT_PATH`: Obsidian Vault 루트 경로
 - `OBSIDIAN_REPORT_DIR`: Vault 내 상대 경로 (기본 `Garmin/Weekly Reports`)
+
+예시(요청 경로):
+- `OBSIDIAN_VAULT_PATH=E:/옵시디언/움직이는 황정민`
+- `OBSIDIAN_REPORT_DIR=건강 상태`
+
+이렇게 설정하면 최종 저장 위치는 아래와 같습니다.
+- `E:\옵시디언\움직이는 황정민\건강 상태`
 
 ## Windows 작업 스케줄러 등록 방법
 `docs/windows_task_scheduler.md` 참고
